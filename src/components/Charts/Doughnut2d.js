@@ -31,7 +31,6 @@ const Doughnut2d = ({ data }) => {
       // Chart Configuration
       chart: {
         caption: "Starts Per language",
-        theme:'fusion',
         decimals: 0,
         doughnutRadius: "45%",
         showPercentValues:0,

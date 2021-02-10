@@ -16,7 +16,7 @@ const Card = () => {
          twitter_username?(<p>@{twitter_username}</p>):(<p></p>)
          }
        </div>
-        <a href={html_url} target="_blank">follow</a>
+        <a href={html_url} target="_blank" rel="noopener noreferrer">follow</a>
      </header>
      <p className='bio'>{bio}</p>
      <div className="links">
@@ -26,7 +26,7 @@ const Card = () => {
        <p>
          <MdLocationOn></MdLocationOn>{location || 'earth'}
        </p>
-       <a href={`http://${blog}`} target='_blank'>
+       <a href={`http://${blog}`} target='_blank' rel="noopener noreferrer">
          <MdLink></MdLink>{blog}
        </a>
      </div>

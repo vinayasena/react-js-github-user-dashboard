@@ -13,6 +13,7 @@ const Search = () => {
       searchGithubUser(user);
     }
   };
+  // eslint-disable-next-line
   React.useEffect(()=>{searchGithubUser('Facebook')},[])
   return (
     <section className="section">

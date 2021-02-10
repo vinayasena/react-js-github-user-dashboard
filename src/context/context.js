@@ -28,7 +28,7 @@ const GithubProvider = ({ children }) => {
         } = data;
 
         setRequest(remaining);
-        if (remaining == 0) {
+        if (remaining === 0) {
           toggleError(true, "You have exceeded the request limit!");
         }
       })
@@ -49,7 +49,7 @@ const GithubProvider = ({ children }) => {
     console.log(`${rootUrl}/users/${user}`)
     if (response) {
       setGithubUser(response.data);
-      const { login, followers_url, repos_url } = response.data;
+      const { followers_url, repos_url } = response.data;
 
       await Promise.allSettled([
         axios(`${repos_url}?per_page=100`),
@@ -59,7 +59,7 @@ const GithubProvider = ({ children }) => {
             const status = 'fulfilled';
             const[repos,followers]  = results;
 
-           if(repos.status == status){
+           if(repos.status === status){
                setRepos(repos.value.data)
            }
            if(followers.status === status){

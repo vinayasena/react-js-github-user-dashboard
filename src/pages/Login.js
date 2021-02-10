@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import styled from "styled-components";
-import loginImg from "../images/login-img.svg";
+import loginImg from "../images/starter-image.jpg";
 const Login = () => {
   const { loginWithRedirect } = useAuth0();
   return (
@@ -22,7 +22,7 @@ const Wrapper = styled.section`
   place-items: center;
   .container {
     width: 90vw;
-    max-width: 600px;
+    max-width: 100%;
     text-align: center;
   }
   img {
