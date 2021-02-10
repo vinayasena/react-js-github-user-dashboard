@@ -8,7 +8,7 @@ const Login = () => {
     <Wrapper>
       <div className="container">
         <img src={loginImg} alt="user login / signup" />
-        <h1>Github User</h1>
+        <h4>Login below to search Github user's</h4>
         <button className="btn" onClick={loginWithRedirect}>
          login / signup
         </button>
@@ -22,14 +22,15 @@ const Wrapper = styled.section`
   place-items: center;
   .container {
     width: 90vw;
-    max-width: 100%;
+    max-width: 50%;
     text-align: center;
   }
   img {
     margin-bottom: 2rem;
   }
-  h1 {
-    margin-bottom: 1.5rem;
+  h4 {
+    margin-bottom: 1rem;
+    font-weight:normal;
   }
 `;
 export default Login;
